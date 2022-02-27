@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="./calculator.png" />
+    <script
+      src="https://kit.fontawesome.com/be8702d0d0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h2 class="title">Tip Calculator</h2>
+      <img src="./calculator.png" alt="icon" />
+    </header>
+    <div class="result">
+      <div class="result-content">
+        <div class="close">
+          <i class="fa-solid fa-xmark fa-2x"></i>
+        </div>
+        <h4 class="result-title">Your total is:</h4>
+        <p class="result-text"></p>
+      </div>
+    </div>
+    <section class="main">
+      <div class="input-section">
+        <input
+          type="number"
+          id="price-input"
+          autofocus
+          placeholder="Your price ..."
+        />
+        <div class="delete">
+          <i class="fa-regular fa-trash-can"></i>
+        </div>
+      </div>
+      <h2 class="tip-title">Select your tip:</h2>
+      <a
+        class="tip-info"
+        href="https://mapsontheweb.zoom-maps.com/post/59486760792/tippinggratuity-practices-worldwide-source"
+        target="_blank"
+        >How much should I tip ?
+        <i class="fa-solid fa-up-right-from-square"></i>
+      </a>
+      <div class="card-wrapper">
+        <div class="card 10">
+          <h3 class="tip-num">10%</h3>
+        </div>
+        <div class="card 20">
+          <h3 class="tip-num">20%</h3>
+        </div>
+        <div class="card 25">
+          <h3 class="tip-num">25%</h3>
+        </div>
+        <div class="card 30">
+          <h3 class="tip-num">30%</h3>
+        </div>
+        <div class="card 40">
+          <h3 class="tip-num">40%</h3>
+        </div>
+        <div class="card 50">
+          <h3 class="tip-num">50%</h3>
+        </div>
+        <div class="card-choose">
+          <label for="choose-input">Choose your own percentage:</label>
+          <input type="number" id="choose-input" />
+        </div>
+      </div>
+    </section>
+    <div id="submit">
+      <button type="button" onclick="calculateTip()">Calculate Tip</button>
+    </div>
+    <div class="credit">Created by Jacob Carl</div>
+    <script src="./script.js"></script>
+  </body>
+</html>

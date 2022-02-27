@@ -1,0 +1,16 @@
+{
+    "name": "Tip Calculator",
+    "short_name": "tipcalc",
+    "theme_color": "#2081c7",
+    "background_color": "#cacaca",
+    "description": "calculates your tip",
+    "display": "fullscreen",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icon": {
+        "src": "./calculator.png",
+        "type": "image/png",
+        "size": "512x512"
+      } 
+  }
