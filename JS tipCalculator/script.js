@@ -67,5 +67,6 @@ deleteBtn.addEventListener("click", () => {
     c.classList.remove("current");
   });
   priceInput.value = "";
+  chooseInput.value = "";
   priceInput.classList.remove("wrong");
 });
